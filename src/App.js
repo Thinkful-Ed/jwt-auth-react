@@ -21,9 +21,7 @@ function App() {
       <Navbar />
       <Routes>
        <Route path='/profile' element={
-         <Protected>
            <Profile />
-         </Protected>
        }
        />
        <Route path='/' element={<Login />} />

@@ -6,14 +6,6 @@ function Login() {
   const handleSubmit = (event) => {
     event.preventDefault()
     const [username, password] = event.target.children;
-    axios.post("https://62b537b4530b26da4ccadf76.mockapi.io/api/v1/jwt", {})
-    .then(response => {
-      const token = response.data.token;
-      localStorage.setItem("token", token);
-      authToken(token);
-      window.location.href = '/profile'
-    })
-    .catch(err => console.log(err));
   };
 
   return (
